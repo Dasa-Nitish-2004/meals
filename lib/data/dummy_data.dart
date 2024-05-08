@@ -57,8 +57,9 @@ const availableCategories = [
   ),
 ];
 
-const dummyMeals = [
+var dummyMeals = [
   Meal(
+    favStat: false,
     id: 'm1',
     categories: [
       'c1',
@@ -93,6 +94,7 @@ const dummyMeals = [
     isLactoseFree: true,
   ),
   Meal(
+    favStat: false,
     id: 'm2',
     categories: [
       'c2',
@@ -121,6 +123,7 @@ const dummyMeals = [
     isLactoseFree: false,
   ),
   Meal(
+    favStat: false,
     id: 'm3',
     categories: [
       'c2',
@@ -153,6 +156,7 @@ const dummyMeals = [
     isLactoseFree: true,
   ),
   Meal(
+    favStat: false,
     id: 'm4',
     categories: [
       'c4',
@@ -188,6 +192,7 @@ const dummyMeals = [
     isLactoseFree: false,
   ),
   Meal(
+    favStat: false,
     id: 'm5',
     categories: [
       'c2'
@@ -224,6 +229,7 @@ const dummyMeals = [
     isLactoseFree: true,
   ),
   Meal(
+    favStat: false,
     id: 'm6',
     categories: [
       'c6',
@@ -260,6 +266,7 @@ const dummyMeals = [
     isLactoseFree: false,
   ),
   Meal(
+    favStat: false,
     id: 'm7',
     categories: [
       'c7',
@@ -291,6 +298,7 @@ const dummyMeals = [
     isLactoseFree: false,
   ),
   Meal(
+    favStat: false,
     id: 'm8',
     categories: [
       'c8',
@@ -324,6 +332,7 @@ const dummyMeals = [
     isLactoseFree: true,
   ),
   Meal(
+    favStat: false,
     id: 'm9',
     categories: [
       'c9',
@@ -373,6 +382,7 @@ const dummyMeals = [
     isLactoseFree: false,
   ),
   Meal(
+    favStat: false,
     id: 'm10',
     categories: [
       'c2',
