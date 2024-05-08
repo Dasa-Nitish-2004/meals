@@ -7,9 +7,9 @@ import 'package:meals/widgets/category_grid_item.dart';
 
 class CategoriesScreen extends StatelessWidget {
   final void Function(Meal, bool) modifyFav;
-
+  final List<Meal> availableMeals;
   void _selectCategory(BuildContext ctx, Category category) {
-    final filteredMeals = dummyMeals
+    final filteredMeals = availableMeals
         .where((meal) => meal.categories.contains(category.id))
         .toList();
 
@@ -24,7 +24,8 @@ class CategoriesScreen extends StatelessWidget {
     ));
   }
 
-  const CategoriesScreen({super.key, required this.modifyFav});
+  const CategoriesScreen(
+      {super.key, required this.modifyFav, required this.availableMeals});
 
   @override
   Widget build(BuildContext context) {
