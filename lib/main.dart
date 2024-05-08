@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:meals/data/dummy_data.dart';
 // import 'package:meals/screens/categories.dart';
@@ -28,11 +28,24 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: theme,
       debugShowCheckedModeBanner: false,
-      home: TabsScreen(),
+      home: splash(),
       // home: MealsScreen(
       //   title: "something",
       //   meals: dummyMeals,
       // ),
+    );
+  }
+}
+
+class splash extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedSplashScreen(
+      splash: 'assets/logo.png',
+      nextScreen: TabsScreen(),
+      duration: 10000,
+      splashTransition: SplashTransition.fadeTransition,
+      // pageTransitionType: PageTransitionType.scale,
     );
   }
 }
